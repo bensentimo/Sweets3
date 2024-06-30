@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.719);
+}
+
+.inner_header{
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo_container{
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo_container h1{
+    color: orange;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Poppins';
+    font-size: 32px;
+}
+
+.logo_container h1 span{
+    font-weight: 800;
+}
+
+.navigation{
+    font-weight: bold;
+    float: right;
+    height: 100%;
+}
+
+.navigation a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 80px;
+    transition: 0.2s;
+}
+
+.navigation a:last-child{
+    padding-right: 0;
+}
+
+.navigation li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: orange;
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+
+.navigation a.active, .navigation a:hover{
+    background: rgba(255, 255, 255, 0.418);
+    border-radius: 20px;
+}
+
+.container{
+    width: 84%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.gallery img{
+    border-radius: 20px;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .logo_container h1{
+        padding: 20px;
+    }
+    .inner_header {
+        width: 100%;
+    }
+    .navigation {
+        height: 0px;
+        float: left;
+        padding: 8%;
+    }
+    .container {
+        width: 83%;
+    }
+}
